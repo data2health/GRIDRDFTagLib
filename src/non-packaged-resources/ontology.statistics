@@ -1,0 +1,375 @@
+classes
+http://www.grid.ac/ontology/Address	74336
+http://xmlns.com/foaf/0.1/Organization	74336
+http://www.grid.ac/ontology/Company	20114
+http://www.grid.ac/ontology/Education	17216
+http://www.grid.ac/ontology/Healthcare	9981
+http://www.grid.ac/ontology/Nonprofit	7812
+http://www.grid.ac/ontology/Facility	5586
+http://www.grid.ac/ontology/Other	4344
+http://www.grid.ac/ontology/Government	4191
+http://www.grid.ac/ontology/Archive	2014
+properties
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type	219930
+http://www.grid.ac/ontology/cityName	74336
+http://www.grid.ac/ontology/countryCode	74336
+http://www.grid.ac/ontology/countryName	74336
+http://www.grid.ac/ontology/hasAddress	74336
+http://www.grid.ac/ontology/id	74336
+http://www.w3.org/2000/01/rdf-schema#label	74336
+http://www.w3.org/2004/02/skos/core#prefLabel	74336
+http://www.grid.ac/ontology/hasGeonamesCity	73816
+http://www.w3.org/2003/01/geo/wgs84_pos#lat	56217
+http://www.w3.org/2003/01/geo/wgs84_pos#long	56217
+http://xmlns.com/foaf/0.1/homepage	55838
+http://www.grid.ac/ontology/establishedYear	50058
+http://www.grid.ac/ontology/isni	30196
+http://vivoweb.org/ontology/core#abbreviation	24741
+http://www.grid.ac/ontology/wikipediaPage	22429
+http://www.grid.ac/ontology/hasWikidataId	16133
+http://www.w3.org/2004/02/skos/core#altLabel	14103
+http://www.grid.ac/ontology/crossrefFunderId	12244
+http://www.grid.ac/ontology/hasChild	8092
+http://www.grid.ac/ontology/hasParent	8092
+http://www.grid.ac/ontology/hasRelated	6212
+http://www.grid.ac/ontology/ukprn	172
+property types
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasAddress	http://www.grid.ac/ontology/Address	74336
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasAddress	http://www.grid.ac/ontology/Address	20114
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasAddress	http://www.grid.ac/ontology/Address	17216
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasAddress	http://www.grid.ac/ontology/Address	9981
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasAddress	http://www.grid.ac/ontology/Address	7812
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasAddress	http://www.grid.ac/ontology/Address	5586
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasAddress	http://www.grid.ac/ontology/Address	4344
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasAddress	http://www.grid.ac/ontology/Address	4191
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/hasAddress	http://www.grid.ac/ontology/Address	2014
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasChild	http://xmlns.com/foaf/0.1/Organization	8092
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Facility	4302
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasChild	http://xmlns.com/foaf/0.1/Organization	3735
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Facility	2325
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasChild	http://xmlns.com/foaf/0.1/Organization	2022
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Healthcare	1550
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasChild	http://xmlns.com/foaf/0.1/Organization	1272
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Healthcare	1161
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Facility	1100
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Education	968
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Education	815
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Government	756
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Government	716
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasChild	http://xmlns.com/foaf/0.1/Organization	489
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Facility	445
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasChild	http://xmlns.com/foaf/0.1/Organization	322
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Healthcare	260
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Facility	215
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Nonprofit	193
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Other	166
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Nonprofit	135
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Other	111
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Education	109
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Company	79
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasChild	http://xmlns.com/foaf/0.1/Organization	78
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Archive	71
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Healthcare	65
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasChild	http://xmlns.com/foaf/0.1/Organization	62
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Archive	60
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Facility	59
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Company	53
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Healthcare	45
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Facility	35
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Other	34
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Government	21
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Nonprofit	20
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Facility	19
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Education	18
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Nonprofit	17
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/hasChild	http://xmlns.com/foaf/0.1/Organization	15
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Facility	14
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Company	13
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Nonprofit	13
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Education	9
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Government	8
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Education	7
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Healthcare	7
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Other	7
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Company	6
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Education	6
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Healthcare	6
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Other	6
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Archive	5
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Government	5
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Other	5
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Archive	4
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Nonprofit	4
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Company	3
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Government	3
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Nonprofit	3
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Company	2
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Government	2
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Healthcare	2
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Other	2
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Archive	1
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Archive	1
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Company	1
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Company	1
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Education	1
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Government	1
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Nonprofit	1
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasChild	http://www.grid.ac/ontology/Other	1
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasParent	http://xmlns.com/foaf/0.1/Organization	8092
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasParent	http://xmlns.com/foaf/0.1/Organization	4302
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Government	3735
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Government	2325
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Education	2022
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasParent	http://xmlns.com/foaf/0.1/Organization	1550
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Healthcare	1272
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Healthcare	1161
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Education	1100
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasParent	http://xmlns.com/foaf/0.1/Organization	968
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Education	815
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasParent	http://xmlns.com/foaf/0.1/Organization	756
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Government	716
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Facility	489
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Facility	445
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Nonprofit	322
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Government	260
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Nonprofit	215
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasParent	http://xmlns.com/foaf/0.1/Organization	193
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasParent	http://xmlns.com/foaf/0.1/Organization	166
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Government	135
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Government	111
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Government	109
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasParent	http://xmlns.com/foaf/0.1/Organization	79
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Company	78
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/hasParent	http://xmlns.com/foaf/0.1/Organization	71
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Nonprofit	65
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Other	62
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Government	60
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Healthcare	59
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Company	53
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Education	45
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Other	35
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Education	34
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Healthcare	21
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Nonprofit	20
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Company	19
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Facility	18
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Healthcare	17
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Archive	15
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Archive	14
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Education	13
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Government	13
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Other	9
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Facility	8
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Healthcare	7
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Nonprofit	7
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Other	7
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Education	6
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Facility	6
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Healthcare	6
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Nonprofit	6
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Education	5
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Facility	5
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Other	5
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Facility	4
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Nonprofit	4
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Education	3
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Nonprofit	3
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Other	3
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Company	2
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Company	2
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Facility	2
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Nonprofit	2
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Archive	1
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Company	1
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Company	1
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Facility	1
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Healthcare	1
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Other	1
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Other	1
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasParent	http://www.grid.ac/ontology/Other	1
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasRelated	http://xmlns.com/foaf/0.1/Organization	6212
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Education	2858
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasRelated	http://xmlns.com/foaf/0.1/Organization	2858
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Healthcare	2437
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasRelated	http://xmlns.com/foaf/0.1/Organization	2437
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Education	2143
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Healthcare	2143
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Company	521
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasRelated	http://xmlns.com/foaf/0.1/Organization	521
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Company	512
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Education	508
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Healthcare	244
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Facility	157
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasRelated	http://xmlns.com/foaf/0.1/Organization	157
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Nonprofit	103
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasRelated	http://xmlns.com/foaf/0.1/Organization	103
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Education	88
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Facility	88
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Government	67
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasRelated	http://xmlns.com/foaf/0.1/Organization	67
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Education	52
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Nonprofit	52
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Other	47
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasRelated	http://xmlns.com/foaf/0.1/Organization	47
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Facility	30
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Education	25
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Other	25
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Education	24
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Government	24
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Nonprofit	18
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Government	17
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Healthcare	17
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Facility	14
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Healthcare	14
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Healthcare	14
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Nonprofit	14
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Facility	12
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Government	12
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Facility	10
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Government	10
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Nonprofit	10
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Archive	6
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Nonprofit	6
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Other	6
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Other	6
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/hasRelated	http://xmlns.com/foaf/0.1/Organization	6
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Archive	5
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Education	5
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Healthcare	4
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Other	4
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Company	2
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Company	2
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Facility	2
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Government	2
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Nonprofit	2
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Other	2
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Other	2
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Other	2
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Archive	1
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Company	1
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Company	1
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Education	1
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Facility	1
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Government	1
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Government	1
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasRelated	http://www.grid.ac/ontology/Nonprofit	1
+literal properties
+http://www.grid.ac/ontology/Address	http://www.grid.ac/ontology/cityName	http://www.w3.org/2001/XMLSchema#string	74336
+http://www.grid.ac/ontology/Address	http://www.grid.ac/ontology/countryCode	http://www.w3.org/2001/XMLSchema#string	74336
+http://www.grid.ac/ontology/Address	http://www.grid.ac/ontology/countryName	http://www.w3.org/2001/XMLSchema#string	74336
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/id	http://www.w3.org/2001/XMLSchema#string	74336
+http://xmlns.com/foaf/0.1/Organization	http://www.w3.org/2000/01/rdf-schema#label	http://www.w3.org/2001/XMLSchema#string	74336
+http://xmlns.com/foaf/0.1/Organization	http://www.w3.org/2004/02/skos/core#prefLabel	http://www.w3.org/2001/XMLSchema#string	74336
+http://www.grid.ac/ontology/Address	http://www.w3.org/2003/01/geo/wgs84_pos#lat	http://www.w3.org/2001/XMLSchema#float	56217
+http://www.grid.ac/ontology/Address	http://www.w3.org/2003/01/geo/wgs84_pos#long	http://www.w3.org/2001/XMLSchema#float	56217
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/establishedYear	http://www.w3.org/2001/XMLSchema#gYear	50058
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/isni	http://www.w3.org/2001/XMLSchema#string	30196
+http://xmlns.com/foaf/0.1/Organization	http://vivoweb.org/ontology/core#abbreviation	http://www.w3.org/2001/XMLSchema#string	24741
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/id	http://www.w3.org/2001/XMLSchema#string	20114
+http://www.grid.ac/ontology/Company	http://www.w3.org/2000/01/rdf-schema#label	http://www.w3.org/2001/XMLSchema#string	20114
+http://www.grid.ac/ontology/Company	http://www.w3.org/2004/02/skos/core#prefLabel	http://www.w3.org/2001/XMLSchema#string	20114
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/id	http://www.w3.org/2001/XMLSchema#string	17216
+http://www.grid.ac/ontology/Education	http://www.w3.org/2000/01/rdf-schema#label	http://www.w3.org/2001/XMLSchema#string	17216
+http://www.grid.ac/ontology/Education	http://www.w3.org/2004/02/skos/core#prefLabel	http://www.w3.org/2001/XMLSchema#string	17216
+http://xmlns.com/foaf/0.1/Organization	http://www.w3.org/2004/02/skos/core#altLabel	http://www.w3.org/2001/XMLSchema#string	14103
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/establishedYear	http://www.w3.org/2001/XMLSchema#gYear	12550
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/crossrefFunderId	http://www.w3.org/2001/XMLSchema#string	12244
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/establishedYear	http://www.w3.org/2001/XMLSchema#gYear	10826
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/id	http://www.w3.org/2001/XMLSchema#string	9981
+http://www.grid.ac/ontology/Healthcare	http://www.w3.org/2000/01/rdf-schema#label	http://www.w3.org/2001/XMLSchema#string	9981
+http://www.grid.ac/ontology/Healthcare	http://www.w3.org/2004/02/skos/core#prefLabel	http://www.w3.org/2001/XMLSchema#string	9981
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/isni	http://www.w3.org/2001/XMLSchema#string	9094
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/id	http://www.w3.org/2001/XMLSchema#string	7812
+http://www.grid.ac/ontology/Nonprofit	http://www.w3.org/2000/01/rdf-schema#label	http://www.w3.org/2001/XMLSchema#string	7812
+http://www.grid.ac/ontology/Nonprofit	http://www.w3.org/2004/02/skos/core#prefLabel	http://www.w3.org/2001/XMLSchema#string	7812
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/establishedYear	http://www.w3.org/2001/XMLSchema#gYear	7157
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/establishedYear	http://www.w3.org/2001/XMLSchema#gYear	6723
+http://www.grid.ac/ontology/Education	http://vivoweb.org/ontology/core#abbreviation	http://www.w3.org/2001/XMLSchema#string	6341
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/id	http://www.w3.org/2001/XMLSchema#string	5586
+http://www.grid.ac/ontology/Facility	http://www.w3.org/2000/01/rdf-schema#label	http://www.w3.org/2001/XMLSchema#string	5586
+http://www.grid.ac/ontology/Facility	http://www.w3.org/2004/02/skos/core#prefLabel	http://www.w3.org/2001/XMLSchema#string	5586
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/isni	http://www.w3.org/2001/XMLSchema#string	5334
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/establishedYear	http://www.w3.org/2001/XMLSchema#gYear	4880
+http://www.grid.ac/ontology/Education	http://www.w3.org/2004/02/skos/core#altLabel	http://www.w3.org/2001/XMLSchema#string	4773
+http://www.grid.ac/ontology/Nonprofit	http://vivoweb.org/ontology/core#abbreviation	http://www.w3.org/2001/XMLSchema#string	4524
+http://www.grid.ac/ontology/Facility	http://vivoweb.org/ontology/core#abbreviation	http://www.w3.org/2001/XMLSchema#string	4346
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/id	http://www.w3.org/2001/XMLSchema#string	4344
+http://www.grid.ac/ontology/Other	http://www.w3.org/2000/01/rdf-schema#label	http://www.w3.org/2001/XMLSchema#string	4344
+http://www.grid.ac/ontology/Other	http://www.w3.org/2004/02/skos/core#prefLabel	http://www.w3.org/2001/XMLSchema#string	4344
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/id	http://www.w3.org/2001/XMLSchema#string	4191
+http://www.grid.ac/ontology/Government	http://www.w3.org/2000/01/rdf-schema#label	http://www.w3.org/2001/XMLSchema#string	4191
+http://www.grid.ac/ontology/Government	http://www.w3.org/2004/02/skos/core#prefLabel	http://www.w3.org/2001/XMLSchema#string	4191
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/isni	http://www.w3.org/2001/XMLSchema#string	3812
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/establishedYear	http://www.w3.org/2001/XMLSchema#gYear	3701
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/isni	http://www.w3.org/2001/XMLSchema#string	3638
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/crossrefFunderId	http://www.w3.org/2001/XMLSchema#string	3575
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/isni	http://www.w3.org/2001/XMLSchema#string	3501
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/crossrefFunderId	http://www.w3.org/2001/XMLSchema#string	3335
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/establishedYear	http://www.w3.org/2001/XMLSchema#gYear	3032
+http://www.grid.ac/ontology/Other	http://vivoweb.org/ontology/core#abbreviation	http://www.w3.org/2001/XMLSchema#string	2636
+http://www.grid.ac/ontology/Government	http://vivoweb.org/ontology/core#abbreviation	http://www.w3.org/2001/XMLSchema#string	2526
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/isni	http://www.w3.org/2001/XMLSchema#string	2136
+http://www.grid.ac/ontology/Healthcare	http://www.w3.org/2004/02/skos/core#altLabel	http://www.w3.org/2001/XMLSchema#string	2039
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/id	http://www.w3.org/2001/XMLSchema#string	2014
+http://www.grid.ac/ontology/Archive	http://www.w3.org/2000/01/rdf-schema#label	http://www.w3.org/2001/XMLSchema#string	2014
+http://www.grid.ac/ontology/Archive	http://www.w3.org/2004/02/skos/core#prefLabel	http://www.w3.org/2001/XMLSchema#string	2014
+http://www.grid.ac/ontology/Healthcare	http://vivoweb.org/ontology/core#abbreviation	http://www.w3.org/2001/XMLSchema#string	1980
+http://www.grid.ac/ontology/Company	http://www.w3.org/2004/02/skos/core#altLabel	http://www.w3.org/2001/XMLSchema#string	1963
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/crossrefFunderId	http://www.w3.org/2001/XMLSchema#string	1930
+http://www.grid.ac/ontology/Company	http://vivoweb.org/ontology/core#abbreviation	http://www.w3.org/2001/XMLSchema#string	1907
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/isni	http://www.w3.org/2001/XMLSchema#string	1835
+http://www.grid.ac/ontology/Facility	http://www.w3.org/2004/02/skos/core#altLabel	http://www.w3.org/2001/XMLSchema#string	1749
+http://www.grid.ac/ontology/Nonprofit	http://www.w3.org/2004/02/skos/core#altLabel	http://www.w3.org/2001/XMLSchema#string	1335
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/crossrefFunderId	http://www.w3.org/2001/XMLSchema#string	1283
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/establishedYear	http://www.w3.org/2001/XMLSchema#gYear	1180
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/crossrefFunderId	http://www.w3.org/2001/XMLSchema#string	1074
+http://www.grid.ac/ontology/Government	http://www.w3.org/2004/02/skos/core#altLabel	http://www.w3.org/2001/XMLSchema#string	1008
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/isni	http://www.w3.org/2001/XMLSchema#string	843
+http://www.grid.ac/ontology/Other	http://www.w3.org/2004/02/skos/core#altLabel	http://www.w3.org/2001/XMLSchema#string	840
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/crossrefFunderId	http://www.w3.org/2001/XMLSchema#string	570
+http://www.grid.ac/ontology/Archive	http://vivoweb.org/ontology/core#abbreviation	http://www.w3.org/2001/XMLSchema#string	451
+http://www.grid.ac/ontology/Archive	http://www.w3.org/2004/02/skos/core#altLabel	http://www.w3.org/2001/XMLSchema#string	389
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/crossrefFunderId	http://www.w3.org/2001/XMLSchema#string	371
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/ukprn	http://www.w3.org/2001/XMLSchema#string	172
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/ukprn	http://www.w3.org/2001/XMLSchema#string	169
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/crossrefFunderId	http://www.w3.org/2001/XMLSchema#string	97
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/ukprn	http://www.w3.org/2001/XMLSchema#string	1
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/ukprn	http://www.w3.org/2001/XMLSchema#string	1
+http://xmlns.com/foaf/0.1/Organization	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	http://www.w3.org/2001/XMLSchema#anyURI	145594
+http://www.grid.ac/ontology/Address	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	http://www.w3.org/2001/XMLSchema#anyURI	74336
+http://www.grid.ac/ontology/Address	http://www.grid.ac/ontology/hasGeonamesCity	http://www.w3.org/2001/XMLSchema#anyURI	73816
+http://xmlns.com/foaf/0.1/Organization	http://xmlns.com/foaf/0.1/homepage	http://www.w3.org/2001/XMLSchema#anyURI	55838
+http://www.grid.ac/ontology/Company	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	http://www.w3.org/2001/XMLSchema#anyURI	40230
+http://www.grid.ac/ontology/Education	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	http://www.w3.org/2001/XMLSchema#anyURI	34441
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/wikipediaPage	http://www.w3.org/2001/XMLSchema#anyURI	22429
+http://www.grid.ac/ontology/Healthcare	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	http://www.w3.org/2001/XMLSchema#anyURI	19964
+http://xmlns.com/foaf/0.1/Organization	http://www.grid.ac/ontology/hasWikidataId	http://www.w3.org/2001/XMLSchema#anyURI	16133
+http://www.grid.ac/ontology/Nonprofit	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	http://www.w3.org/2001/XMLSchema#anyURI	15625
+http://www.grid.ac/ontology/Company	http://xmlns.com/foaf/0.1/homepage	http://www.w3.org/2001/XMLSchema#anyURI	13675
+http://www.grid.ac/ontology/Education	http://xmlns.com/foaf/0.1/homepage	http://www.w3.org/2001/XMLSchema#anyURI	11307
+http://www.grid.ac/ontology/Facility	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	http://www.w3.org/2001/XMLSchema#anyURI	11175
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/hasWikidataId	http://www.w3.org/2001/XMLSchema#anyURI	10756
+http://www.grid.ac/ontology/Other	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	http://www.w3.org/2001/XMLSchema#anyURI	8690
+http://www.grid.ac/ontology/Government	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	http://www.w3.org/2001/XMLSchema#anyURI	8382
+http://www.grid.ac/ontology/Education	http://www.grid.ac/ontology/wikipediaPage	http://www.w3.org/2001/XMLSchema#anyURI	8295
+http://www.grid.ac/ontology/Healthcare	http://xmlns.com/foaf/0.1/homepage	http://www.w3.org/2001/XMLSchema#anyURI	7977
+http://www.grid.ac/ontology/Nonprofit	http://xmlns.com/foaf/0.1/homepage	http://www.w3.org/2001/XMLSchema#anyURI	7792
+http://www.grid.ac/ontology/Facility	http://xmlns.com/foaf/0.1/homepage	http://www.w3.org/2001/XMLSchema#anyURI	5537
+http://www.grid.ac/ontology/Other	http://xmlns.com/foaf/0.1/homepage	http://www.w3.org/2001/XMLSchema#anyURI	4316
+http://www.grid.ac/ontology/Archive	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	http://www.w3.org/2001/XMLSchema#anyURI	4029
+http://www.grid.ac/ontology/Government	http://xmlns.com/foaf/0.1/homepage	http://www.w3.org/2001/XMLSchema#anyURI	3939
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/wikipediaPage	http://www.w3.org/2001/XMLSchema#anyURI	3937
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/wikipediaPage	http://www.w3.org/2001/XMLSchema#anyURI	2840
+http://www.grid.ac/ontology/Healthcare	http://www.grid.ac/ontology/hasWikidataId	http://www.w3.org/2001/XMLSchema#anyURI	2544
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/wikipediaPage	http://www.w3.org/2001/XMLSchema#anyURI	2365
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/wikipediaPage	http://www.w3.org/2001/XMLSchema#anyURI	1883
+http://www.grid.ac/ontology/Archive	http://xmlns.com/foaf/0.1/homepage	http://www.w3.org/2001/XMLSchema#anyURI	1280
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/wikipediaPage	http://www.w3.org/2001/XMLSchema#anyURI	1169
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/wikipediaPage	http://www.w3.org/2001/XMLSchema#anyURI	1120
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/wikipediaPage	http://www.w3.org/2001/XMLSchema#anyURI	812
+http://www.grid.ac/ontology/Company	http://www.grid.ac/ontology/hasWikidataId	http://www.w3.org/2001/XMLSchema#anyURI	770
+http://www.grid.ac/ontology/Government	http://www.grid.ac/ontology/hasWikidataId	http://www.w3.org/2001/XMLSchema#anyURI	693
+http://www.grid.ac/ontology/Facility	http://www.grid.ac/ontology/hasWikidataId	http://www.w3.org/2001/XMLSchema#anyURI	590
+http://www.grid.ac/ontology/Nonprofit	http://www.grid.ac/ontology/hasWikidataId	http://www.w3.org/2001/XMLSchema#anyURI	298
+http://www.grid.ac/ontology/Archive	http://www.grid.ac/ontology/hasWikidataId	http://www.w3.org/2001/XMLSchema#anyURI	160
+http://www.grid.ac/ontology/Other	http://www.grid.ac/ontology/hasWikidataId	http://www.w3.org/2001/XMLSchema#anyURI	151

@@ -1,0 +1,3346 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+
+	<tlib-version>2.1</tlib-version>
+	<short-name>edu.uiowa.slis.GRIDRDF</short-name>
+	<uri>http://slis.uiowa.edu/GRIDRDF</uri>
+
+	<tag>
+		<name>SPARQL</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.utility.SPARQL</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>subject</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>SPARQLPredicate</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.utility.SPARQLPredicate</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+
+	<tag>
+		<name>SPARQLObject</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.utility.SPARQLObject</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+
+	<tag>
+		<name>Government</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.Government</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachGovernment</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstGovernmentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastGovernmentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>GovernmentSubjectURI</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentSubjectURI</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>GovernmentLabel</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachGovernmentHasRelatedIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelatedIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstGovernmentHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastGovernmentHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>GovernmentHasRelated</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelated</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>GovernmentHasRelatedType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelatedType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachGovernmentHasAddressIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasAddressIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstGovernmentHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastGovernmentHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>GovernmentHasAddress</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasAddress</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasAddress</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>GovernmentHasAddressType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasAddressType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachGovernmentWikipediaPageIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentWikipediaPageIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstGovernmentWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastGovernmentWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>GovernmentWikipediaPage</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentWikipediaPage</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>wikipediaPage</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachGovernmentEstablishedYearIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentEstablishedYearIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstGovernmentEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastGovernmentEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>GovernmentEstablishedYear</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentEstablishedYear</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>establishedYear</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachGovernmentIdIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentIdIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstGovernmentIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentIdIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastGovernmentIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentIdIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>GovernmentId</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachGovernmentHasChildIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasChildIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstGovernmentHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastGovernmentHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>GovernmentHasChild</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasChild</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasChild</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>GovernmentHasChildType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasChildType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachGovernmentHasParentIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasParentIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstGovernmentHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastGovernmentHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>GovernmentHasParent</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasParent</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasParent</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>GovernmentHasParentType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasParentType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachGovernmentHasRelatedInverseIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelatedInverseIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstGovernmentHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastGovernmentHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>GovernmentHasRelatedInverse</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelatedInverse</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>GovernmentHasRelatedInverseType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelatedInverseType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>Education</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.Education</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachEducation</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstEducationInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastEducationInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>EducationSubjectURI</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationSubjectURI</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>EducationLabel</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachEducationHasRelatedIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelatedIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstEducationHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastEducationHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>EducationHasRelated</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelated</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>EducationHasRelatedType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelatedType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachEducationHasAddressIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasAddressIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstEducationHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastEducationHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>EducationHasAddress</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasAddress</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasAddress</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>EducationHasAddressType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasAddressType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachEducationWikipediaPageIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationWikipediaPageIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstEducationWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastEducationWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>EducationWikipediaPage</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationWikipediaPage</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>wikipediaPage</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachEducationEstablishedYearIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationEstablishedYearIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstEducationEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastEducationEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>EducationEstablishedYear</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationEstablishedYear</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>establishedYear</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachEducationIdIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationIdIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstEducationIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationIdIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastEducationIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationIdIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>EducationId</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachEducationHasChildIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasChildIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstEducationHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastEducationHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>EducationHasChild</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasChild</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasChild</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>EducationHasChildType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasChildType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachEducationHasParentIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasParentIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstEducationHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastEducationHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>EducationHasParent</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasParent</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasParent</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>EducationHasParentType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasParentType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachEducationHasRelatedInverseIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelatedInverseIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstEducationHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastEducationHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>EducationHasRelatedInverse</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelatedInverse</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>EducationHasRelatedInverseType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelatedInverseType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>Nonprofit</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.Nonprofit</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNonprofit</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstNonprofitInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastNonprofitInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>NonprofitSubjectURI</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitSubjectURI</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>NonprofitLabel</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNonprofitHasRelatedIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelatedIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstNonprofitHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastNonprofitHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>NonprofitHasRelated</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelated</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>NonprofitHasRelatedType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelatedType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNonprofitHasAddressIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasAddressIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstNonprofitHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastNonprofitHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>NonprofitHasAddress</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasAddress</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasAddress</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>NonprofitHasAddressType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasAddressType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNonprofitWikipediaPageIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitWikipediaPageIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstNonprofitWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastNonprofitWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>NonprofitWikipediaPage</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitWikipediaPage</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>wikipediaPage</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNonprofitEstablishedYearIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitEstablishedYearIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstNonprofitEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastNonprofitEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>NonprofitEstablishedYear</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitEstablishedYear</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>establishedYear</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNonprofitIdIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitIdIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstNonprofitIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitIdIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastNonprofitIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitIdIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>NonprofitId</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNonprofitHasChildIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasChildIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstNonprofitHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastNonprofitHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>NonprofitHasChild</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasChild</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasChild</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>NonprofitHasChildType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasChildType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNonprofitHasParentIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasParentIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstNonprofitHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastNonprofitHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>NonprofitHasParent</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasParent</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasParent</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>NonprofitHasParentType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasParentType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNonprofitHasRelatedInverseIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelatedInverseIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstNonprofitHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastNonprofitHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>NonprofitHasRelatedInverse</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelatedInverse</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>NonprofitHasRelatedInverseType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelatedInverseType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>Other</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.Other</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachOther</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstOtherInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastOtherInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>OtherSubjectURI</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherSubjectURI</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>OtherLabel</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachOtherHasRelatedIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelatedIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstOtherHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastOtherHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>OtherHasRelated</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelated</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>OtherHasRelatedType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelatedType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachOtherHasAddressIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasAddressIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstOtherHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastOtherHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>OtherHasAddress</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasAddress</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasAddress</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>OtherHasAddressType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasAddressType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachOtherWikipediaPageIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherWikipediaPageIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstOtherWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastOtherWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>OtherWikipediaPage</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherWikipediaPage</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>wikipediaPage</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachOtherEstablishedYearIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherEstablishedYearIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstOtherEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastOtherEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>OtherEstablishedYear</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherEstablishedYear</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>establishedYear</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachOtherIdIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherIdIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstOtherIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherIdIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastOtherIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherIdIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>OtherId</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachOtherHasChildIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasChildIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstOtherHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastOtherHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>OtherHasChild</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasChild</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasChild</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>OtherHasChildType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasChildType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachOtherHasParentIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasParentIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstOtherHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastOtherHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>OtherHasParent</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasParent</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasParent</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>OtherHasParentType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasParentType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachOtherHasRelatedInverseIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelatedInverseIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstOtherHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastOtherHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>OtherHasRelatedInverse</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelatedInverse</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>OtherHasRelatedInverseType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelatedInverseType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>Archive</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.Archive</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachArchive</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstArchiveInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastArchiveInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>ArchiveSubjectURI</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveSubjectURI</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>ArchiveLabel</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachArchiveHasRelatedIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelatedIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstArchiveHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastArchiveHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>ArchiveHasRelated</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelated</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>ArchiveHasRelatedType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelatedType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachArchiveHasAddressIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasAddressIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstArchiveHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastArchiveHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>ArchiveHasAddress</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasAddress</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasAddress</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>ArchiveHasAddressType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasAddressType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachArchiveWikipediaPageIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveWikipediaPageIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstArchiveWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastArchiveWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>ArchiveWikipediaPage</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveWikipediaPage</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>wikipediaPage</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachArchiveEstablishedYearIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveEstablishedYearIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstArchiveEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastArchiveEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>ArchiveEstablishedYear</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveEstablishedYear</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>establishedYear</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachArchiveIdIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveIdIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstArchiveIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveIdIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastArchiveIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveIdIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>ArchiveId</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachArchiveHasChildIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasChildIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstArchiveHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastArchiveHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>ArchiveHasChild</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasChild</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasChild</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>ArchiveHasChildType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasChildType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachArchiveHasParentIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasParentIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstArchiveHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastArchiveHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>ArchiveHasParent</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasParent</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasParent</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>ArchiveHasParentType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasParentType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachArchiveHasRelatedInverseIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelatedInverseIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstArchiveHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastArchiveHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>ArchiveHasRelatedInverse</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelatedInverse</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>ArchiveHasRelatedInverseType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelatedInverseType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>Facility</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.Facility</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFacility</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstFacilityInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastFacilityInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>FacilitySubjectURI</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilitySubjectURI</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>FacilityLabel</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFacilityHasRelatedIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelatedIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstFacilityHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastFacilityHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>FacilityHasRelated</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelated</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>FacilityHasRelatedType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelatedType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFacilityHasAddressIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasAddressIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstFacilityHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastFacilityHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>FacilityHasAddress</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasAddress</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasAddress</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>FacilityHasAddressType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasAddressType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFacilityWikipediaPageIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityWikipediaPageIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstFacilityWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastFacilityWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>FacilityWikipediaPage</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityWikipediaPage</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>wikipediaPage</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFacilityEstablishedYearIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityEstablishedYearIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstFacilityEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastFacilityEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>FacilityEstablishedYear</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityEstablishedYear</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>establishedYear</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFacilityIdIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityIdIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstFacilityIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityIdIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastFacilityIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityIdIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>FacilityId</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFacilityHasChildIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasChildIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstFacilityHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastFacilityHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>FacilityHasChild</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasChild</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasChild</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>FacilityHasChildType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasChildType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFacilityHasParentIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasParentIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstFacilityHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastFacilityHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>FacilityHasParent</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasParent</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasParent</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>FacilityHasParentType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasParentType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFacilityHasRelatedInverseIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelatedInverseIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstFacilityHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastFacilityHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>FacilityHasRelatedInverse</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelatedInverse</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>FacilityHasRelatedInverseType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelatedInverseType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>Company</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.Company</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachCompany</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstCompanyInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastCompanyInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>CompanySubjectURI</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanySubjectURI</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>CompanyLabel</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachCompanyHasRelatedIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelatedIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstCompanyHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastCompanyHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>CompanyHasRelated</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelated</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>CompanyHasRelatedType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelatedType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachCompanyHasAddressIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasAddressIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstCompanyHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastCompanyHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>CompanyHasAddress</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasAddress</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasAddress</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>CompanyHasAddressType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasAddressType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachCompanyWikipediaPageIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyWikipediaPageIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstCompanyWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastCompanyWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>CompanyWikipediaPage</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyWikipediaPage</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>wikipediaPage</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachCompanyEstablishedYearIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyEstablishedYearIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstCompanyEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastCompanyEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>CompanyEstablishedYear</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyEstablishedYear</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>establishedYear</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachCompanyIdIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyIdIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstCompanyIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyIdIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastCompanyIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyIdIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>CompanyId</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachCompanyHasChildIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasChildIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstCompanyHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastCompanyHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>CompanyHasChild</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasChild</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasChild</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>CompanyHasChildType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasChildType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachCompanyHasParentIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasParentIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstCompanyHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastCompanyHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>CompanyHasParent</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasParent</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasParent</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>CompanyHasParentType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasParentType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachCompanyHasRelatedInverseIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelatedInverseIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstCompanyHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastCompanyHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>CompanyHasRelatedInverse</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelatedInverse</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>CompanyHasRelatedInverseType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelatedInverseType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>Healthcare</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.Healthcare</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachHealthcare</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstHealthcareInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastHealthcareInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>HealthcareSubjectURI</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareSubjectURI</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>HealthcareLabel</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachHealthcareHasRelatedIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelatedIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstHealthcareHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastHealthcareHasRelatedInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelatedIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>HealthcareHasRelated</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelated</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>HealthcareHasRelatedType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelatedType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachHealthcareHasAddressIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasAddressIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstHealthcareHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastHealthcareHasAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasAddressIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>HealthcareHasAddress</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasAddress</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasAddress</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>HealthcareHasAddressType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasAddressType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachHealthcareWikipediaPageIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareWikipediaPageIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstHealthcareWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastHealthcareWikipediaPageInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareWikipediaPageIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>HealthcareWikipediaPage</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareWikipediaPage</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>wikipediaPage</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachHealthcareEstablishedYearIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareEstablishedYearIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstHealthcareEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastHealthcareEstablishedYearInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareEstablishedYearIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>HealthcareEstablishedYear</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareEstablishedYear</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>establishedYear</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachHealthcareIdIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareIdIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstHealthcareIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareIdIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastHealthcareIdInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareIdIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>HealthcareId</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachHealthcareHasChildIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasChildIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstHealthcareHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastHealthcareHasChildInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasChildIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>HealthcareHasChild</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasChild</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasChild</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>HealthcareHasChildType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasChildType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachHealthcareHasParentIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasParentIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstHealthcareHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastHealthcareHasParentInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasParentIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>HealthcareHasParent</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasParent</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasParent</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>HealthcareHasParentType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasParentType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachHealthcareHasRelatedInverseIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelatedInverseIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstHealthcareHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastHealthcareHasRelatedInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelatedInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>HealthcareHasRelatedInverse</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelatedInverse</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasRelated</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>HealthcareHasRelatedInverseType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelatedInverseType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>Address</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.Address</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachAddress</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Address.AddressIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastAddressInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Address.AddressIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>AddressSubjectURI</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressSubjectURI</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>subjectURI</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>AddressLabel</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachAddressCountryNameIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressCountryNameIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstAddressCountryNameInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Address.AddressCountryNameIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastAddressCountryNameInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Address.AddressCountryNameIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>AddressCountryName</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressCountryName</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>countryName</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachAddressCountryCodeIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressCountryCodeIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstAddressCountryCodeInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Address.AddressCountryCodeIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastAddressCountryCodeInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Address.AddressCountryCodeIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>AddressCountryCode</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressCountryCode</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>countryCode</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachAddressHasGeonamesCityIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressHasGeonamesCityIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstAddressHasGeonamesCityInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Address.AddressHasGeonamesCityIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastAddressHasGeonamesCityInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Address.AddressHasGeonamesCityIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>AddressHasGeonamesCity</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressHasGeonamesCity</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasGeonamesCity</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>AddressHasGeonamesCityType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressHasGeonamesCityType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachAddressCityNameIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressCityNameIterator</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<function>
+		<name>isFirstAddressCityNameInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Address.AddressCityNameIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastAddressCityNameInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Address.AddressCityNameIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>AddressCityName</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressCityName</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>cityName</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachAddressHasAddressInverseIterator</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressHasAddressInverseIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>classFilter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>isFirstAddressHasAddressInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Address.AddressHasAddressInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
+	</function>
+
+	<function>
+		<name>isLastAddressHasAddressInverseInstance</name>
+		<function-class>edu.uiowa.slis.GRIDRDF.Address.AddressHasAddressInverseIterator</function-class>
+		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
+	</function>
+
+	<tag>
+		<name>AddressHasAddressInverse</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressHasAddressInverse</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hasAddress</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>AddressHasAddressInverseType</name>
+		<tag-class>edu.uiowa.slis.GRIDRDF.Address.AddressHasAddressInverseType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
