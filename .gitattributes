@@ -226,6 +226,7 @@ src/main/java/edu/uiowa/slis/GRIDRDF/Other/OtherWikipediaPage.java -text
 src/main/java/edu/uiowa/slis/GRIDRDF/Other/OtherWikipediaPageIterator.java -text
 src/main/java/edu/uiowa/slis/GRIDRDF/README.txt -text
 src/main/java/edu/uiowa/slis/GRIDRDF/TagLibSupport.java -text
+src/main/java/edu/uiowa/slis/GRIDRDF/utility/Indexer.java -text
 src/main/java/edu/uiowa/slis/GRIDRDF/utility/SPARQL.java -text
 src/main/java/edu/uiowa/slis/GRIDRDF/utility/SPARQLObject.java -text
 src/main/java/edu/uiowa/slis/GRIDRDF/utility/SPARQLPredicate.java -text
