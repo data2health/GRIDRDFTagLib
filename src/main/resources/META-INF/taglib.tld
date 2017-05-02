@@ -369,54 +369,6 @@
 	</tag>
 
 	<tag>
-		<name>foreachGovernmentHasRelatedInverseIterator</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelatedInverseIterator</tag-class>
-		<body-content>JSP</body-content>
-
-		<attribute>
-			<name>classFilter</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<function>
-		<name>isFirstGovernmentHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
-	</function>
-
-	<function>
-		<name>isLastGovernmentHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
-	</function>
-
-	<tag>
-		<name>GovernmentHasRelatedInverse</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelatedInverse</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>hasRelated</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
-		<name>GovernmentHasRelatedInverseType</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Government.GovernmentHasRelatedInverseType</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>type</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
 		<name>Education</name>
 		<tag-class>edu.uiowa.slis.GRIDRDF.Education.Education</tag-class>
 		<body-content>JSP</body-content>
@@ -743,54 +695,6 @@
 	<tag>
 		<name>EducationHasParentType</name>
 		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasParentType</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>type</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
-		<name>foreachEducationHasRelatedInverseIterator</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelatedInverseIterator</tag-class>
-		<body-content>JSP</body-content>
-
-		<attribute>
-			<name>classFilter</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<function>
-		<name>isFirstEducationHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
-	</function>
-
-	<function>
-		<name>isLastEducationHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
-	</function>
-
-	<tag>
-		<name>EducationHasRelatedInverse</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelatedInverse</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>hasRelated</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
-		<name>EducationHasRelatedInverseType</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Education.EducationHasRelatedInverseType</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
@@ -1137,54 +1041,6 @@
 	</tag>
 
 	<tag>
-		<name>foreachNonprofitHasRelatedInverseIterator</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelatedInverseIterator</tag-class>
-		<body-content>JSP</body-content>
-
-		<attribute>
-			<name>classFilter</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<function>
-		<name>isFirstNonprofitHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
-	</function>
-
-	<function>
-		<name>isLastNonprofitHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
-	</function>
-
-	<tag>
-		<name>NonprofitHasRelatedInverse</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelatedInverse</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>hasRelated</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
-		<name>NonprofitHasRelatedInverseType</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Nonprofit.NonprofitHasRelatedInverseType</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>type</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
 		<name>Other</name>
 		<tag-class>edu.uiowa.slis.GRIDRDF.Other.Other</tag-class>
 		<body-content>JSP</body-content>
@@ -1511,54 +1367,6 @@
 	<tag>
 		<name>OtherHasParentType</name>
 		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasParentType</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>type</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
-		<name>foreachOtherHasRelatedInverseIterator</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelatedInverseIterator</tag-class>
-		<body-content>JSP</body-content>
-
-		<attribute>
-			<name>classFilter</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<function>
-		<name>isFirstOtherHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
-	</function>
-
-	<function>
-		<name>isLastOtherHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
-	</function>
-
-	<tag>
-		<name>OtherHasRelatedInverse</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelatedInverse</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>hasRelated</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
-		<name>OtherHasRelatedInverseType</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Other.OtherHasRelatedInverseType</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
@@ -1905,54 +1713,6 @@
 	</tag>
 
 	<tag>
-		<name>foreachArchiveHasRelatedInverseIterator</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelatedInverseIterator</tag-class>
-		<body-content>JSP</body-content>
-
-		<attribute>
-			<name>classFilter</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<function>
-		<name>isFirstArchiveHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
-	</function>
-
-	<function>
-		<name>isLastArchiveHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
-	</function>
-
-	<tag>
-		<name>ArchiveHasRelatedInverse</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelatedInverse</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>hasRelated</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
-		<name>ArchiveHasRelatedInverseType</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Archive.ArchiveHasRelatedInverseType</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>type</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
 		<name>Facility</name>
 		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.Facility</tag-class>
 		<body-content>JSP</body-content>
@@ -2279,54 +2039,6 @@
 	<tag>
 		<name>FacilityHasParentType</name>
 		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasParentType</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>type</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
-		<name>foreachFacilityHasRelatedInverseIterator</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelatedInverseIterator</tag-class>
-		<body-content>JSP</body-content>
-
-		<attribute>
-			<name>classFilter</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<function>
-		<name>isFirstFacilityHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
-	</function>
-
-	<function>
-		<name>isLastFacilityHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
-	</function>
-
-	<tag>
-		<name>FacilityHasRelatedInverse</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelatedInverse</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>hasRelated</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
-		<name>FacilityHasRelatedInverseType</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Facility.FacilityHasRelatedInverseType</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
@@ -2673,54 +2385,6 @@
 	</tag>
 
 	<tag>
-		<name>foreachCompanyHasRelatedInverseIterator</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelatedInverseIterator</tag-class>
-		<body-content>JSP</body-content>
-
-		<attribute>
-			<name>classFilter</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<function>
-		<name>isFirstCompanyHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
-	</function>
-
-	<function>
-		<name>isLastCompanyHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
-	</function>
-
-	<tag>
-		<name>CompanyHasRelatedInverse</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelatedInverse</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>hasRelated</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
-		<name>CompanyHasRelatedInverseType</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Company.CompanyHasRelatedInverseType</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>type</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
 		<name>Healthcare</name>
 		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.Healthcare</tag-class>
 		<body-content>JSP</body-content>
@@ -3047,54 +2711,6 @@
 	<tag>
 		<name>HealthcareHasParentType</name>
 		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasParentType</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>type</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
-		<name>foreachHealthcareHasRelatedInverseIterator</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelatedInverseIterator</tag-class>
-		<body-content>JSP</body-content>
-
-		<attribute>
-			<name>classFilter</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<function>
-		<name>isFirstHealthcareHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getFirstInstance()</function-signature>
-	</function>
-
-	<function>
-		<name>isLastHealthcareHasRelatedInverseInstance</name>
-		<function-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelatedInverseIterator</function-class>
-		<function-signature>java.lang.Boolean getLastInstance()</function-signature>
-	</function>
-
-	<tag>
-		<name>HealthcareHasRelatedInverse</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelatedInverse</tag-class>
-		<body-content>empty</body-content>
-
-		<attribute>
-			<name>hasRelated</name>
-			<required>false</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
-
-	<tag>
-		<name>HealthcareHasRelatedInverseType</name>
-		<tag-class>edu.uiowa.slis.GRIDRDF.Healthcare.HealthcareHasRelatedInverseType</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>

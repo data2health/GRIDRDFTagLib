@@ -19,6 +19,9 @@ public class Healthcare extends edu.uiowa.slis.GRIDRDF.TagLibSupport {
 	String subjectURI = null;
 	String label = null;
 	boolean commitNeeded = false;
+	String wikipediaPage = null;
+	String establishedYear = null;
+	String id = null;
 
 	public int doStartTag() throws JspException {
 		currentInstance = this;
@@ -103,6 +106,30 @@ public class Healthcare extends edu.uiowa.slis.GRIDRDF.TagLibSupport {
 
 	public  String getLabel() {
 		return label;
+	}
+
+	public  void setWikipediaPage(String theWikipediaPage) {
+		wikipediaPage = theWikipediaPage;
+	}
+
+	public  String getWikipediaPage() {
+		return wikipediaPage;
+	}
+
+	public  void setEstablishedYear(String theEstablishedYear) {
+		establishedYear = theEstablishedYear;
+	}
+
+	public  String getEstablishedYear() {
+		return establishedYear;
+	}
+
+	public  void setId(String theId) {
+		id = theId;
+	}
+
+	public  String getId() {
+		return id;
 	}
 
 }

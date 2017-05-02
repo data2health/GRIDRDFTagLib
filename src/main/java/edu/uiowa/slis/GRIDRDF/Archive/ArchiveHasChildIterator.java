@@ -40,7 +40,7 @@ public class ArchiveHasChildIterator extends edu.uiowa.slis.GRIDRDF.TagLibSuppor
 
 			rs = getResultSet(prefix+"SELECT ?s ?t where {"
 					+" <" + subjectURI + "> <http://www.grid.ac/ontology/hasChild> ?s . "
-					+" ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t ."
+					+" OPTIONAL { ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t } ."
 					+" FILTER NOT EXISTS {"
 					+"   ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?subtype ."
 					+"   ?subtype <http://www.w3.org/2000/01/rdf-schema#subClassOf> ?t ."
@@ -50,9 +50,9 @@ public class ArchiveHasChildIterator extends edu.uiowa.slis.GRIDRDF.TagLibSuppor
 			while(rs.hasNext()) {
 				QuerySolution sol = rs.nextSolution();
 				hasChild = sol.get("?s").toString();
-				type = getLocalName(sol.get("?t").toString());
-				if (type == null)
-					continue;
+				type = sol.get("?t") == null ? null : getLocalName(sol.get("?t").toString());
+//				if (type == null)
+//					continue;
 				if (classFilter == null || (classFilter != null && type != null && classFilter.containsKey(type))) {
 					log.info("instance: " + hasChild + "	type: " + type);
 					firstInstance = true;
@@ -75,9 +75,9 @@ public class ArchiveHasChildIterator extends edu.uiowa.slis.GRIDRDF.TagLibSuppor
 			while(rs.hasNext()) {
 				QuerySolution sol = rs.nextSolution();
 				hasChild = sol.get("?s").toString();
-				type = getLocalName(sol.get("?t").toString());
-				if (type == null)
-					continue;
+				type = sol.get("?t") == null ? null : getLocalName(sol.get("?t").toString());
+//				if (type == null)
+//					continue;
 				if (classFilter == null || (classFilter != null && type != null && classFilter.containsKey(type))) {
 					log.info("instance: " + hasChild + "	type: " + type);
 					firstInstance = false;
